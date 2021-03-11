@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+       <title>Django Init</title>
+    </head>
+    <body>
+       <p>Biblioteca de Livros</p>
+       <ul>
+          {% for book in book_list %}
+             <li>
+                <b>Título:</b> {{ book.title }} - <b>Escritor:</b> {{ book.writer }} - <b>Reservado:</b> {{ book.reserved }}
+                <button type="button">Reservar</button>
+             </li>
+          {% endfor %}
+       </ul>
+    </body>
+</html>
